@@ -3,7 +3,6 @@
 import Modal from '@/assets/components/Modal';
 import PixelButton from '@/assets/components/PixelButton';
 import PixelLoading from '@/assets/components/PixelLoading';
-import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Home() {
@@ -16,7 +15,7 @@ export default function Home() {
     src: '',
   });
   const openRecommendationModal = () => {
-    setIsRecommendationModalOpen(!isRecommendationModalOpen);
+    setIsRecommendationModalOpen(true);
     console.log('Opening the recommendation modal');
   };
 
@@ -27,6 +26,7 @@ export default function Home() {
 
   const sendForm = () => {
     console.log('sending form!');
+    setIsRecommendationModalOpen(false);
   };
 
   return (
