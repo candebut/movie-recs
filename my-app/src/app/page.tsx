@@ -23,7 +23,9 @@ export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-evenly p-24'>
       <h2>Te recomiendo esta peli porque</h2>
-      {isRecommendationModalOpen ? <Modal></Modal> : null}
+      {isRecommendationModalOpen ? (
+        <Modal handleClose={() => setIsRecommendationModalOpen(false)}></Modal>
+      ) : null}
       {isLoading ? (
         <PixelLoading />
       ) : (

@@ -1,6 +1,11 @@
-const Modal = () => {
+import { IoCloseCircle } from 'react-icons/io5';
+
+const Modal = (props: { handleClose: () => void }) => {
   return (
-    <div className='main-modal pixel_button'>
+    <div className='main-modal pixel_modal'>
+      <div className='modal-close'>
+        <IoCloseCircle onClick={() => props.handleClose()} />
+      </div>
       <div className='modal-title-wrapper'>
         <h3>Recomendá una peli que te haya tocado el corazón</h3>
         <p>
