@@ -341,6 +341,11 @@ body {
   box-shadow: 10px 10px 0px 3px rgb(255, 51, 0);
 }
 
+.modal-content {
+  max-height: 80vh;
+  overflow: scroll;
+}
+
 .main-modal,
 .main-modal .modal-title-wrapper,
 .main-modal .modal-form-wrapper {
@@ -373,6 +378,11 @@ body {
   font-family: zai;
   font-size: 18px;
   gap: 1rem;
+  input,
+  textarea {
+    color: black;
+    padding: 5px;
+  }
 }
 
 .modal-close {
