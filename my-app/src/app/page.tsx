@@ -1,5 +1,6 @@
 'use client';
 
+import Modal from '@/assets/components/Modal';
 import PixelButton from '@/assets/components/PixelButton';
 import PixelLoading from '@/assets/components/PixelLoading';
 import Image from 'next/image';
@@ -7,8 +8,10 @@ import { useState } from 'react';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isRecommendationModalOpen, setIsRecommendationModalOpen] =
+    useState<boolean>(false);
   const openRecommendationModal = () => {
-    setIsLoading(true);
+    setIsRecommendationModalOpen(!isRecommendationModalOpen);
     console.log('Opening the recommendation modal');
   };
 
@@ -20,6 +23,7 @@ export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-evenly p-24'>
       <h2>Te recomiendo esta peli porque</h2>
+      {isRecommendationModalOpen ? <Modal></Modal> : null}
       {isLoading ? (
         <PixelLoading />
       ) : (
