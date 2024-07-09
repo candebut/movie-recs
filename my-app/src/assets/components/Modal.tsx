@@ -1,9 +1,11 @@
 import { IoCloseCircle } from 'react-icons/io5';
+import PixelButton from './PixelButton';
 
 const Modal = (props: {
   handleClose: () => void;
   setRecommendation: any;
   recommendation: any;
+  sendForm: any;
 }) => {
   return (
     <div className={`main-modal pixel_modal`}>
@@ -37,7 +39,7 @@ const Modal = (props: {
           />
           <label htmlFor='film-exp'>Por qué recomendas esta película?</label>
           <textarea
-            rows={3}
+            rows={4}
             name='film-exp'
             value={props.recommendation.description}
             onChange={(e) =>
@@ -62,6 +64,9 @@ const Modal = (props: {
               })
             }
           />
+        </div>
+        <div className='modal-button'>
+          <PixelButton onClick={() => props.sendForm()}>Enviar</PixelButton>
         </div>
       </div>
     </div>

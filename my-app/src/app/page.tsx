@@ -25,6 +25,10 @@ export default function Home() {
     console.log('getting film recommendation');
   };
 
+  const sendForm = () => {
+    console.log('sending form!');
+  };
+
   return (
     <main className='flex min-h-screen flex-col items-center justify-evenly p-24'>
       <h2>Te recomiendo esta peli porque</h2>
@@ -33,6 +37,7 @@ export default function Home() {
           handleClose={() => setIsRecommendationModalOpen(false)}
           setRecommendation={setRecommendation}
           recommendation={recommendation}
+          sendForm={sendForm}
         ></Modal>
       ) : null}
       {isLoading ? (

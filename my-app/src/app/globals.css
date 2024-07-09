@@ -342,7 +342,7 @@ body {
 }
 
 .modal-content {
-  max-height: 80vh;
+  max-height: 70vh;
   overflow: scroll;
 }
 
@@ -356,7 +356,7 @@ body {
 .main-modal {
   gap: 2rem;
   position: relative;
-  padding: 1rem;
+  padding: 2rem;
   position: fixed;
   z-index: 1000;
   width: 90%;
@@ -389,4 +389,9 @@ body {
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+
+.modal-button {
+  width: fit-content;
+  margin-top: 1.25rem;
 }
