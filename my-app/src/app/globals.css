@@ -32,6 +32,40 @@ body {
   }
 }
 
+@font-face {
+  font-family: 'craft';
+  src: url('../assets/fonts/CraftVintage.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'graffiti';
+  src: url('../assets/fonts/GRAFFITI.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'invasion2000';
+  src: url('../assets/fonts/INVASION2000.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'rainbow';
+  src: url('../assets/fonts/Rainbow2000-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'tag';
+  src: url('../assets/fonts/TagHandTrash.otf') format('opentype');
+}
+@font-face {
+  font-family: 'vintage';
+  src: url('../assets/fonts/TheVintage.otf') format('opentype');
+}
+@font-face {
+  font-family: 'vintage one';
+  src: url('../assets/fonts/VintageOne.ttf') format('opentype');
+}
+@font-face {
+  font-family: 'zai';
+  src: url('../assets/fonts/zai_HongKongGraffiti.ttf') format('truetype');
+}
+
 .main-container {
   width: auto;
   text-align: center;
@@ -317,6 +351,28 @@ body {
 .main-modal {
   gap: 2rem;
   position: relative;
+  padding: 1rem;
+  position: fixed;
+  z-index: 1000;
+  width: 90%;
+}
+
+.modal-title-wrapper {
+  h1 {
+    font-family: rainbow;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  p {
+    font-family: zai;
+    font-size: 18px;
+  }
+}
+
+.modal-form-wrapper {
+  font-family: zai;
+  font-size: 18px;
+  gap: 1rem;
 }
 
 .modal-close {
