@@ -1,6 +1,7 @@
 const PixelLoading = () => {
   return (
     <div className='container'>
+      Recibiendo peli...
       <div className='loader'>
         <div id='block_01' className='block active'></div>
         <div id='block_02' className='block active'></div>

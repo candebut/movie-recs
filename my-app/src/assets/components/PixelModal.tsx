@@ -1,7 +1,7 @@
 import { IoCloseCircle } from 'react-icons/io5';
 import PixelButton from './PixelButton';
 
-const Modal = (props: {
+const PixelModal = (props: {
   handleClose: () => void;
   setRecommendation: any;
   recommendation: any;
@@ -73,4 +73,4 @@ const Modal = (props: {
   );
 };
 
-export default Modal;
+export default PixelModal;
